@@ -11,7 +11,8 @@
       name: "FormatTime",
       data() {
           return {
-            pubTime:Moment(new Date()).format("YYYY-MM-DD HH:mm:ss")
+            pubTime:Moment(new Date()).format("YYYY-MM-DD HH:mm:ss"),
+            msg:"lxw"
           }
       },
       directives:{
