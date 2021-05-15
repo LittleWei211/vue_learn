@@ -12,8 +12,7 @@
       data() {
           return {
             pubTime:Moment(new Date()).format("YYYY-MM-DD HH:mm:ss"),
-            msg:"lxw",
-            sex:'男'
+            msg:"lxw"
           }
       },
       directives:{
