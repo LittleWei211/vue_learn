@@ -1,0 +1,970 @@
+/*应用总览*/
+.appInfo ul{
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-between;*/
+
+  width: 1340px;
+}
+/*.appInfo li{
+  display: flex;
+  flex-grow: 0;
+  border: 1px solid #eee;
+  background-color: #fff;
+  flex-basis: 245px;
+  flex-basis: 312px;
+  justify-content: space-between;
+  align-items: center;
+}
+.appInfo li a{
+  display: flex;
+  width:100%;
+  align-items: center;
+  padding: 15px 20px;
+}*/
+
+.appInfo li{
+  border: 1px solid #eee;
+  background-color: #fff;
+  width: 312px;
+  align-items: center;
+  float: left;
+  margin-right: 21px;
+}
+.appInfo li a{
+  display: block;
+  padding: 15px 20px;
+}
+
+/*.appInfo .icon1{
+  width: 69px;
+  height: 67px;
+  min-width: 69px;
+  background-image: url("../images/icon.jpg");
+  background-repeat: no-repeat;
+}*/
+
+.appInfo .icon1{
+  width: 69px;
+  height: 67px;
+  min-width: 69px;
+  background-image: url("../images/icon.jpg");
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.appInfo .icon1{
+  background-position: left top;
+}
+.appInfo .icon2{
+  background-position: left -67px;
+}
+.appInfo .icon3{
+  background-position: left -134px;
+}
+.appInfo .icon4{
+  background-position: left -201px;
+}
+/*.appInfo .appNum{
+  margin-left: auto;
+  text-align: right;
+}*/
+
+.appInfo .appNum{
+  float: right;
+  margin-left: auto;
+  text-align: right;
+  padding: 7px 0;
+}
+.appInfo .appNum h2{
+  font-size: 30px;
+  color: #20a0ff;
+  word-break: break-all;
+  line-height: 32px;
+}
+.appInfo .appNum span{
+  font-size: 14px;
+  color: #666;
+}
+
+.appInfo .appNumVul h2{
+  color: #dd3e3e;
+}
+
+.vulTopFiveCon{
+  width: 417px;
+  height: 300px;
+  margin-top: 20px;
+  float: left;
+  border: 1px solid #eee;
+  background-color: #fff;
+  padding: 0 10px;
+}
+.vulTopFiveCon h2{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 0 0 5px;
+}
+
+.vulTopFive{
+  height: 280px;
+}
+
+
+/*应用管理-项目列表*/
+.addSearch{
+  padding-bottom: 10px;
+}
+
+.addProject{
+  float: left;
+}
+.addProject span{
+  border:1px solid lightblue;
+  padding: 2px 5px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 14px;
+  color: #30a1c6;
+  float: left;
+}
+.searchProject{
+  float: right;
+  float: left;
+  /*position: relative;*/
+}
+.searchProject input{
+  width: 166px;
+  height: 23px;
+  float: left;
+  border: 1px solid #bbb;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-right: none;
+  text-indent: 8px;
+  color: #666;
+  outline: none;
+}
+.searchProject a{
+  width: 23px;
+  height: 23px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  display: block;
+  float: right;
+  margin-left: -2px;
+  border-left: none;
+  background: url("../images/searchBg.jpg") no-repeat center center;
+  background-size: 19px 18px;
+  padding:0 2px;
+}
+.projectInfoL{
+  width: 180px;
+  float: left;
+}
+.projectInfoL p{
+  font-size: 14px;
+  padding: 2px 0 2px 2px;
+}
+.projectInfoL p i{
+  font-style: normal;
+}
+.projectInfoL p.proName{
+  color: #30a1c6;
+}
+.projectInfoL p.loopholeIp{
+  color: #777;
+}
+.projectInfoL p.loopholeNum{
+  color: #e04444;
+}
+.projectInfoL p.loopholeTest{
+  color: #777;
+}
+.projectInfoR{
+  width: 100px;
+  float: right;
+}
+.projectInfoR p{
+  font-size: 12px;
+  padding:  2px 5px 2px 0;
+  text-align: right;
+}
+.projectInfoR p.loopholeType{
+  color: #777;
+}
+.projectInfoR p.isInput{
+  font-size: 14px;
+  color: #30a1c6;
+  margin: 10px 0;
+}
+.projectInfoR p.isInput span{
+  background-color: #e2eff8;
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+.projectInfoR p.tester{
+  color: #777;
+}
+.projectList li{
+  padding: 5px 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid #f6f9fb;
+  cursor: default;
+}
+.projectList li.nowPro{
+  background-color: #f6f9fb;
+  background-color: #d7e5ef;
+}
+.pageFlip button.prev{
+  float: left;
+}
+.pageFlip{
+  text-align: center;
+  margin-top:20px;
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.pageFlip button{
+  border: none;
+  background-color: #eee;
+  padding:4px 8px;
+  color: #ccc;
+  border-radius: 3px;
+  font-size: 12px;
+  outline: none;
+}
+.pageFlip button:hover{
+  background-color: #bbb;
+  color: #fff;
+}
+.pageFlip button.next{
+  float: right;
+}
+.pageFlip p{
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color:#999;
+
+}
+.pageFlip p i{
+  font-style: normal;
+  color:#666;
+  font-size: 16px;
+}
+
+/*项目管理-基础信息*/
+
+.basicInfo{
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #eee;
+}
+.biTitle h2{
+  height: 46px;
+  line-height: 46px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.biContent{
+  padding-bottom: 10px;
+  height: 128px;
+}
+.biContent .projectName p{
+  height: 22px;
+  line-height: 22px;
+  font-size: 16px;
+  color: #807a7a;
+  padding: 5px 0;
+  color: rgb(128, 122, 122);
+}
+.biContent .projectName p i,.biContent .projectSafeInfo p i{
+  width: 2px;
+  display: inline-block;
+  height: 14px;
+  background-color: #30a1c6;
+  font-style: normal;
+  margin: 0 12px;
+  background-color: #fff;
+}
+.biContent .projectName .redColor{
+  color: red;
+  color: #fff;
+}
+.biContent .projectName .greenColor{
+  color: #5fc65f;
+}
+.biContent .projectName .blueColor{
+  color: #24bcd5;
+}
+
+.biContent .projectSafeInfo{
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  padding: 12px 0;
+}
+.biContent .projectSafeInfo p{
+  font-size: 16px;
+  color: red;
+  float: left;
+  padding: 6px 0;
+}
+.projectSafeInfo .projectAct{
+  float: right;
+}
+.projectSafeInfo .projectAct>div{
+  font-size: 16px;
+  color: #0dd5e4;
+  padding: 6px 8px;
+  border-radius: 3px;
+  float: left;
+  border: 1px solid #0dd5e4;
+  margin-left: 20px;
+  cursor: default;
+}
+
+.statisSiteMap{
+  /*padding: 0 20px;*/
+  /* border-radius: 3px;
+    background-color: #fff; */
+  margin-top: 20px;
+}
+
+.ssHead{
+  display: inline-block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #eee;
+  border-bottom: none;
+  float: left;
+}
+.ssHead li{
+  float: left;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-left: 1px solid #eee;
+  margin-left: -1px;
+  color: #aaa;
+  cursor: default;
+}
+.ssHead li.ssActive{
+  background-color: #f6696e;
+  color: #fff;
+}
+
+.ssContainer{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+/*扫描动态*/
+.scanDynamic{
+  float: left;
+}
+.scan{
+  width: 400px;
+  height: 292px;
+  background-color: #fff;
+  float: left;
+  border: 1px solid #eee;
+  background-color: #fff;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+}
+.scanHead{
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.scanHead h2{
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  padding: 6px 0;
+}
+.scanHead .refresh{
+  float: right;
+  border: 1px solid skyblue;
+  padding: 5px 8px;
+  color: skyblue;
+  border-radius: 3px;
+  cursor: default;
+}
+.scanContent{
+  height: 240px;
+  overflow: hidden;
+}
+.scanContent li{
+  padding: 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.scanTime{
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+  color: #727272;
+  font-size: 14px;
+}
+.scanResult p{
+  font-size: 14px;
+  word-break: break-all;
+  color: #727272;
+}
+
+/*漏洞分布*/
+.circleGraphCon{
+  /*width: 400px;*/
+  width:48.0553%;
+  height: 292px;
+  padding: 0 10px;
+  float: right;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.circleGraphCon h2,.vulStatusCon h2{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 0 0 5px;
+}
+.circleGrahp{
+  height: 248px;
+}
+.loopHoleDis{
+  width: 42px;
+  height: 300px;
+  float: right;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+/*漏洞状态*/
+.vulStatusCon{
+  float: left;
+  width: 841px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.vulStatus{
+  height: 356px;
+  margin-top: 10px;
+}
+
+.mVulListPage{
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.vulUrlListTab{
+  display: inline-block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #eee;
+  border-bottom: none;
+  float: left;
+}
+.vulUrlListTab li{
+  float: left;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-left: 1px solid #eee;
+  margin-left: -1px;
+  color: #aaa;
+  cursor: default;
+}
+.vulUrlListTab li.vulUrlOn{
+  background-color: #20a0ff;
+  color: #fff;
+}
+.listTableCon{
+  width: 820px;
+  padding: 0 20px;
+  background-color: #fff;
+  border:1px solid #eee;
+}
+
+
+/*漏洞列表*/
+.listTable table td,.listTable table th{
+  border-bottom: 1px solid #f0eaea;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 12px;
+}
+.listTable table th{
+  font-size: 14px;
+  position: relative;
+}
+.orderCon{
+  height: 30px;
+  float: right;
+  width: 8px;
+  position: relative;
+  top: -4px;
+  right: 8px;
+  display: block;
+}
+.listTable table th span{
+  float: left;
+  display: block;
+}
+.listTable table th span svg{
+  float: right;
+  margin-top: 3px;
+}
+.orderCon span.orderRise{
+  position:absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top:4px solid transparent;
+  border-left:4px solid transparent;
+  border-right:4px solid transparent;
+  border-bottom:6px solid #333;
+  top: 0;
+}
+.orderCon span.orderDrop{
+  position:absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top:6px solid #333;
+  border-left:4px solid transparent;
+  border-right:4px solid transparent;
+  border-bottom:4px solid transparent;
+  bottom: 0;
+}
+.listTable table p{
+  color: #666;
+  display:inline-block;
+  word-break: break-all;
+}
+.listTable table p.fixedStatus{
+  color: #de2828;
+}
+.listTable table p.operate a{
+  color: #30a1c6;
+}
+.listTable table p.operate i{
+  width: 2px;
+  display: inline-block;
+  height: 14px;
+  background-color: #30a1c6;
+  font-style: normal;
+  margin: -3px 12px;
+}
+
+/*漏洞概述*/
+.VulSummaryTitle,.instruTitle{
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #bdccd4;
+}
+.VulSummaryTitle h2,.instruTitle h2{
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+.VulSummaryTitle a{
+  float: right;
+  margin-right: 20px;
+  font-size: 14px;
+  padding-left: 30px;
+  background: url("../images/backApp.png") no-repeat left center;
+}
+
+.vulBasicInfo{
+  padding: 15px 8px;
+}
+.vulLevelStatus{
+  height: 28px;
+  line-height: 28px;
+  padding-left: 40px;
+  background: url("../images/vulBasicIcon.jpg") no-repeat left 0;
+  font-size: 14px;
+}
+.vulType,.payLoad{
+  /*height: 28px;*/
+  line-height: 28px;
+  padding-left: 40px;
+  font-size: 14px;
+}
+.vulType span,.payLoad span{
+  float: left;
+  color: #243350;
+}
+.vulType p,.payLoad p{
+  color: #243350;
+  word-break: break-all;
+}
+.payLoad p{
+  color:#db4043;
+}
+.infoItem{
+  padding: 0 8px;
+  margin-bottom: 20px;
+}
+.infoItem h2{
+  height: 28px;
+  line-height: 28px;
+  padding-left: 40px;
+  font-size: 14px;
+  color: #20a0ff;
+  font-weight: bold;
+  background-image: url("../images/vulBasicIcon.jpg");
+  background-repeat: no-repeat;
+}
+.infoItem h2.attackDetail{
+  background-position: left -28px;
+}
+.infoItem h2.vulDes{
+  background-position: left -56px;
+}
+.infoItem h2.vulFixed{
+  background-position: left -84px;
+}
+.infoItem .infoItemText{
+  margin: 10px 0 0 40px;
+  padding: 12px 10px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+}
+.infoItem .infoItemText p{
+  word-break: break-all;
+}
+.infoItemText li{
+  line-height: 28px;
+}
+
+.testEditReq{
+  width: 560px;
+  float: left;
+  margin-top: 16px;
+}
+/*.testEditTab li{
+  float: left;
+  padding: 8px 10px;
+  border: 1px solid #5aa5ef;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 1px solid #fff;
+  color: #5aa5ef;
+  cursor: default;
+}
+.testEditTab li.testEditTabOn{
+  background-color: #5aa5ef;
+  color: #fff;
+  border-bottom: 1px solid #5aa5ef;
+}*/
+
+.testEditTab li{
+  float: left;
+  padding: 8px 10px;
+  border: 1px solid #5aa5ef;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 1px solid #5aa5ef;
+  color: #fff;
+  cursor: default;
+  background-color: #5aa5ef;
+}
+.testEditTab li.testEditTabOn{
+  background-color: transparent;
+  color: #5aa5ef;
+  border-bottom: 1px solid #fff;
+}
+
+.testItem,.editItem{
+  height: 430px;
+  border: 1px solid #5aa5ef;
+  margin-top: -1px;
+  word-break: break-all;
+}
+.testItem .testItemCon,.editItem .testItemCon{
+  height: 420px;
+  overflow-y: scroll;
+  padding: 10px 5px 1px 10px;
+}
+.testItem .testItemCon p,.editItem .testItemCon p,.resItem .testItemCon p,.webviewItem .testItemCon p{
+  font-size: 14px;
+}
+.testItem .testItemCon pre,.editItem .testItemCon pre,.resItem .testItemCon pre,.webviewItem .testItemCon pre{
+  font-size: 14px;
+  font-family: '微软雅黑';
+  white-space:pre-wrap;
+  word-break: break-all;
+}
+.editItem textarea{
+  border: none;
+  width: 538px;
+  height: 420px;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+  word-break: break-all;
+  padding: 10px;
+}
+.showResBtn{
+  width: 80px;
+  background-color: transparent;
+  border: 1px solid #20a0ff;
+  color: #20a0ff;
+  padding: 6px 12px;
+  border-radius: 3px;
+  margin: 230px 10px;
+}
+.resWebview{
+  width: 560px;
+  float: right;
+  margin-top: 16px;
+}
+
+/*.resWebview .testEditTab li{
+  border-color: #68d8cb;
+  border-bottom-color: #fff;
+  color: #68d8cb;
+}
+.resWebview .testEditTab li.resWebViewTabOn{
+  background-color: #68d8cb;
+  color: #fff;
+  border-bottom-color: #68d8cb;
+}*/
+
+.resWebview .testEditTab li{
+  background-color: #68d8cb;
+  border-color: #68d8cb;
+  border-bottom-color: #68d8cb;
+  color: #fff;
+}
+.resWebview .testEditTab li.resWebViewTabOn{
+  background-color: transparent;
+  color: #68d8cb;
+  border-bottom-color: #fff;
+}
+
+.resItem,.webviewItem{
+  border: 1px solid #68d8cb;
+  height: 430px;
+  margin-top: -1px;
+  word-break: break-all;
+  margin-top: -1px;
+}
+
+.resItem .testItemCon,.webviewItem .testItemCon{
+  height: 420px;
+  overflow-y: scroll;
+  padding: 10px 5px 1px 10px;
+}
+
+
+/**任务列表**/
+.taskFilter{
+  width: 800px;
+  margin: 0 auto;
+}
+.taskFilter input{
+  width: 688px;
+  padding: 6px 5px;
+  float: left;
+  border: 1px solid #ccc;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+
+}
+.taskFilter button{
+  width: 98px;
+  height: 30px;
+  margin-left: -1px;
+  border:none;
+  background-color: #3a8ee6;
+  color: #fff;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.taskFilter select{
+  width: 92px;
+  height: 30px;
+  float: left;
+  /*padding: 5.5px 0;*/
+  border-color: #ccc;
+  max-height: 30px;
+  color: #666;
+}
+
+.listTable table tr:hover{
+  background-color: #eee;
+  cursor: pointer;
+}
+.listTable table tr:hover *{
+  color: #000;
+}
+
+#inputTips{
+  position: absolute;
+  height: 28px;
+  line-height: 28px;
+  left: 266px;
+  top: 39px;
+  font-size: 10px;
+  color: #f6696e;
+  display: none;
+  letter-spacing: 2px;
+}
+
+.refreshBtn{
+  width: 98px;
+  text-align: center;
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  right: 140px;
+  top: 15px;
+  border: none;
+  color: #fff;
+  padding: 3px 5px;
+  background-color: #5fc65f;
+  background-color: #3a8ee6;
+  outline: none;
+  border-radius: 2px;
+}
+
+/*帮助部分*/
+.instrucText{
+  margin-top:10px;
+  border-radius: 3px;
+  padding: 12px 10px;
+}
+.instrucText ul>li{
+  margin-bottom:16px;
+}
+.download,.update{
+  margin-top: 10px;
+}
+.download .instrucText{
+  background-color: #fff;
+}
+.download .instrucText li a{
+  color: #30a1c6;
+}
+.download .instrucText li:hover a{
+  text-decoration: underline;
+  display: block;
+}
+
+.updateTimeVersion{
+  font-size: 14px;
+  font-weight: bold;
+}
+.updateText ul li{
+  font-size: 14px;
+  padding: 3px 0;
+  margin-bottom: 0;
+}
+.updateVersion{
+  float: right;
+}
+
+
+/*测试样式*/
+.vulTypeSearch{
+  /*width: 160px;*/
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 3px;
+}
+.vulTypeSearch input{
+  width: 100px;
+  float: left;
+  padding: 2px 0;
+  outline: none;
+}
+.vulTypeSearch .mx-input-wrapper input{
+  width: 262px;
+  font-size: 12px;
+  border-radius: 0;
+  height: auto;
+}
+.mx-datepicker-range{
+  width: 262px;
+}
+.mx-icon-calendar,.mx-icon-clear{
+  right: 5px;
+}
+.vulTypeSearch button{
+  float: right;
+  border: none;
+  background-color: #3a8ee6;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+
+}
+.vulTypeSearch select{
+  /*padding: 2px 2px;*/
+  padding: 1px 1px 3px 1px;
+  overflow: hidden !important;
+}
+
+.listTable table tr:hover button{
+  color: #fff;
+}
+
+
+.taskBasicInfo .biContent{
+  padding-top: 10px;
+}
+.taskBasicInfo .basicInfo{
+  border:none;
+  padding: 0;
+}
+.taskBasicInfo .basicInfo p{
+  padding: 5px 0;
+  font-size: 14px;
+  color: #000
+}
+.taskBasicInfo .basicInfo p span{
+  color: #666;
+}
+.taskBasicInfo .basicInfo .projectName{
+  width:30%;
+  float:left;
+}
+.vulStateView{
+  width:60px;
+  float:left;
+  border:1px solid #ccc;
+  height: 19px;
+  line-height: 20px;
+  padding: 0 2px;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.screenCondition{
+  padding-right: 20px;
+  background: url("../images/screen16.png") no-repeat right 6px;
+  background-size: 13px 11px;
+}
+
