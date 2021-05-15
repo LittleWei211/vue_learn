@@ -12,7 +12,8 @@
       data() {
           return {
             pubTime:Moment(new Date()).format("YYYY-MM-DD HH:mm:ss"),
-            msg:"lxw"
+            msg:"lxw",
+            status:"sleep"
           }
       },
       directives:{
