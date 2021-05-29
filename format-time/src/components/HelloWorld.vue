@@ -16,6 +16,7 @@
 
     <p ref="count">{{count}}</p>
     <button @click="add" ref='add'>aad</button>
+    <Drag></Drag>
   </div>
 </template>
 
@@ -23,6 +24,7 @@
 import Format from "../components/format/FormatTime"
 import UseDirective from "../components/directive/UseDirective"
 import ChaCao from "../components/slot/ChaCao"
+
 export default {
   name: 'HelloWorld',
   data () {
@@ -35,7 +37,8 @@ export default {
   components:{
     Format,
     UseDirective,
-    ChaCao
+    ChaCao,
+    Drag:()=>import('../components/drag/Drag')
   },
   methods: {
     add(){
