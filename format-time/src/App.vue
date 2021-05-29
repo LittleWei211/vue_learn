@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <alley-Button type="primary">123</alley-Button>
+    <alley-Button>default</alley-Button>
+    <alley-Button type="danger">danger</alley-Button>
     <HelloWorld/>
   </div>
 </template>
