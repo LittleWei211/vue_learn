@@ -30,6 +30,7 @@ export default {
 }
 .primary{
     background-color: blue;
+    background-color: lightblue;
 }
 .danger{
     background-color: red;
