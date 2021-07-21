@@ -31,6 +31,7 @@ export default {
 .primary{
     background-color: blue;
     background-color: lightblue;
+    background-color: black;
 }
 .danger{
     background-color: red;
